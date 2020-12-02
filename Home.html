@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Your Dream Hotel</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- Latest compiled and minified CSS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- jQuery library -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- Latest compiled JavaScript -->
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+<style>	
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>	
+</head>
+
+<body>
+<header>
+    <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="Home.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"><img src="image/Radisson_Blu_logo.png"/></div>
+          </a>
+		  
+		  <div class="navbar-brand">
+            <a href="Home.html"><h1>Radisson Blu Chittagong Bay View</h1></a>
+          </div>
+		  
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+		   <li>
+              <a href="Home.html">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+            </li>
+			<li>
+              <a href="room.php">
+                <span class="glyphicon glyphicon-bed"></span><br class="hidden-xs"> Rooms</a>
+            </li>
+            <li>
+              <a href="food.php">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="login.php">
+                <span class="glyphicon glyphicon-log-in"></span><br class="hidden-xs"> Log In</a>
+            </li>
+			<li>
+              <a href="admin.php">
+                <span class="glyphicon glyphicon-user"></span><br class="hidden-xs"> Admin </a>
+            </li>
+			
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <!-- <div class="marquee">
+  <marquee behavior="alternate" direction="right" scrollamount="15" onmouseover="this.stop();" onmouseout="this.start();">
+  <img src="image/hotel-1_1024x550.jpg" alt="hotel peninsula" id="img_slide"/>
+  <img src="image/rooms-banner.jpg" alt="hotel peninsula" id="img_slide"/>
+  <img src="image/marquee-3_1440x550.jpg" alt="hotel peninsula" id="img_slide"/>
+  </marquee>
+  </div> -->
+  <div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <img src="image/hotel-1_1024x550.jpg" id="img_slide">
+	 </div>
+
+	<div class="mySlides fade">
+	  <img src="image/rooms-banner.jpg" id="img_slide">
+	 </div>
+
+	<div class="mySlides fade">
+	  <img src="image/marquee-3_1440x550.jpg" id="img_slide">
+	 </div>
+
+  </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+  <div class="summary">
+	<div id="Intro">
+		<h1>EXPERIENCE THE BEAUTY OF THE BAY AND HILL TRACTS FROM THIS CHITTAGONG CITY HOTEL</h1>
+		<p style="text-align:justify">As the first upper upscale international accommodation in Chittagong City, the Radisson Blu Chittagong Bay View offers a modern lodging experience 
+		within walking distance M.A. Aziz Stadium and Chittagong Club Limited. Convenient amenities like free high-speed, wireless Internet, a Business Class 
+		Lounge and Chittagong&#146;s largest pillarless event facility allow business travelers to stay productive during their stay. When you're winding down from
+		a full day of activity, let the stress melt away with a swim in our circular infinity pool, a beverage from a pool bar or a visit to the hotel spa.
+		After enjoying a restful night&#146;s sleep in the contemporary furnishings of your room or suite, start your morning with a complimentary breakfast. 
+		Later in the day, savor international cuisine, freshly pressed juices and classic cocktails found in our eight different restaurants and bars.</p>
+	</div>
+	<div class="sidebar">
+		<h2> View </h2>
+		<p>This property treats guests to breathtaking views of the Hill Tracts and Chittagong Bay.</p>
+		<h2>Local Attractions</h2>
+		<p>Just a 10-minute drive from the city&#146;s business hub and 40 minutes from Shah Amanat International Airport (CGP), our hotel is also within walking 
+		distance of M.A. Aziz Stadium and Batali Hill.</p>
+		<h2>Inviting Rooms</h2>
+		<p>Relax in the upscale comfort of our 241 rooms, which feature amenities like satellite television, mini bars, 
+		memory foam beds and plush down bedding.</p>
+	</div>
+ </div>
+ <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 1500); // Change image every 2 seconds
+}
+</script> 
+</body>
+</html>
